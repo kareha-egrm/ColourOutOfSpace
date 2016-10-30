@@ -1,0 +1,280 @@
+body{
+	background-color:#ffffff;
+	color:#000000;
+	margin:1em 10%;
+	line-height:170%;
+	writing-mode: horizontal-tb;
+}
+h1{
+	font-size:150%;
+}
+h2{
+	text-indent:3em;
+	font-size:130%;
+}
+p{
+	text-indent:1em;
+	margin-top:0.5em;
+}
+p.data{
+	margin-bottom:1em;
+}
+
+p.start_with_quotation_mark{
+	text-indent:0.5em;
+}
+p.qmf{
+	text-indent:0.5em;
+}
+p.noindent{
+	text-indent:0;
+}
+
+p.original_text{
+	display:none;
+}
+p.orig{
+	display:none;
+}
+p.original_text_visible{
+	display:block;
+	color:gray;
+	font-family:'メイリオ';
+}
+
+address{
+	font-style:normal;
+}
+
+.okuduke{
+	margin-top:5em;
+	color:dimgray;
+	page-break-before:always;
+}
+.bibliographical_information{
+	margin-top:3em;
+	padding-left:1em;
+	border-left:4pt solid dimgray;
+	page-break-before:always;
+}
+
+ol.breadcrumb_list{
+	margin:0;
+	padding:0;
+	line-height:1.5em;
+	font-size:90%;
+}
+.breadcrumb_list li{
+	list-style-type:none;
+	display:inline;
+}
+.breadcrumb_list li:after{
+	content:" > ";
+}
+.breadcrumb_list li:last-child:after{
+	content:none;
+}
+.breadcrumb_list li.currentpage{
+	font-weight:bold;
+}
+
+q{
+	quotes:'' '';
+}
+a.wikipedia{
+	text-decoration:none;
+	border-bottom:dotted 1px black;
+	color:black;
+}
+a.wikipedia_notja{
+	text-decoration:none;
+	border-bottom:dotted 1px black;
+	color:black;
+}
+.note{
+	color:green;
+}
+.transnote{
+	color:green;
+}
+.title{
+	text-transform:uppercase;
+}
+.author{
+	display:inline;
+}
+ul.menu{
+	margin-left:0px;
+	display:block;
+}
+ul.menu li{
+	display:inline;
+	margin-right:0.5em;
+	margin-left:0.5em;
+}
+ul.menu li:before{
+	content:"[";
+}
+ul.menu li:after{
+	content:"]";
+}
+div.separation{
+	margin-top:3em;
+	margin-bottom:2em;
+	color:#ffffff;
+}
+div.pagebreak{
+	margin-top:3em;
+	color:#ffffff;
+	page-break-after:always;
+}
+.aozora{
+	display:none;
+}
+
+span.holizontal{
+}
+
+span.vertical{
+	display:none;
+}
+
+pre.verse{
+}
+span.rubytrans{
+	color:darkred;
+}
+.utilitymenu{
+	background:aliceblue;
+	text-align:center;
+	border:1px solid lightblue;
+}
+div.footmenu{
+	background:aliceblue;
+	text-align:center;
+	border:1px solid lightblue;
+}
+
+dt.origtitle{
+	display:none;
+}
+dt.author{
+	display:none;
+}
+dt.origauthor{
+	display:none;
+}
+dt.translator{
+	display:none;
+}
+dd{
+	margin-left:1em;
+}
+dd.origtitle{
+	text-transform:uppercase;
+}
+dd.origauthor{
+	display:inline;
+}
+dd.translator:after{
+	content:'訳'
+}
+ol.roman{
+	list-style-type: upper-roman;
+}
+
+.sesame_dot {
+    font-style: normal;
+}
+
+.jisage_2{
+	margin-left:2em;
+}
+.jisage_3{
+	margin-left:3em;
+}
+.jisage_4{
+	margin-left:4em;
+}
+.jisage_5{
+	margin-left:5em;
+}
+.jisage_6{
+	margin-left:6em;
+}
+
+div.criticalmessage{
+	text-align:center;
+	background:pink;
+	margin-top:10px;
+	border:1px solid red;
+	color:black;
+}
+
+div.navi_toc{
+	text-align:center;
+	background:ash;
+	margin-top:10px;
+	border:1px solid grey;
+	color:black;
+}
+
+div.navi_zenda{
+	margin-top:10px;
+	text-indent:1em;
+	border:1px solid grey;
+	color:black;
+}
+
+div.header_booklog{
+	text-align:center;
+	background:lightgreen;
+	padding:5px;
+	margin-top:10px;
+	border:1px solid green;
+	color:black;
+    vertical-align:middle;	
+}
+
+div.header_booklog img{
+    vertical-align:bottom;
+}
+
+/* 縦書き用 */
+
+body.vertical{
+	writing-mode: vertical-rl;
+	font-family: "游明朝", "游明朝体";
+}
+body.vertical a.wikipedia{
+	border-left:dotted 1px grey;
+	border-bottom:none;
+}
+body.vertical a.wikipedia_notja{
+	border-left:dotted 1px grey;
+	border-bottom:none;
+}
+
+
+/* テキスト変換用 */
+
+
+
+
+/* レスポンシブデザイン用 
+有効にするためには html 側に meta 要素の記述が必要。
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ */
+ 
+ /* 横幅490px以下対応。スマートフォンを想定。
+480pxでもたぶん大丈夫だけどすこし余裕を */
+@media screen and (max-width:490px) {
+	body{
+		margin:0.2em;
+	}
+	.airzoshi{
+		display:none;
+	}
+}
+
+
